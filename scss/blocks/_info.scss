@@ -1,0 +1,63 @@
+.info {
+    display: flex;
+    margin-top: 90px;
+
+    @media screen and (max-width:$tablet-start){
+        display: block;
+        margin-top: 70px;
+    }
+    @media screen and (max-width:$mobile){
+        margin-top: 70px;
+    }
+
+    &__time {
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        font-family: $primary-title;
+        color: $color-black-default;
+        margin-right: 230px;
+
+        @media screen and (max-width:$mobile){
+        width: 300px;
+        height: 160px;
+        margin: 0 auto;
+        font-size: 24px;
+        display: block;
+
+}
+
+        &-text {
+            display: inline-block;
+            width: 470px;
+
+            @media screen and (max-width:$tablet-start){
+                width: 700px;
+            }
+            @media screen and (max-width:$mobile){
+                width: 300px;
+            }
+        }
+    }
+    &__description {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        color: $color-gray;
+
+        @media screen and (max-width:$tablet-start){
+            text-align: right;
+            margin-top: 70px;
+        }
+        @media screen and (max-width:$mobile){
+            text-align: left;
+            margin-top: 50px;
+        }
+    }
+}
+.last {
+    margin-top: 40px;
+}

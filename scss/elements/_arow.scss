@@ -1,0 +1,52 @@
+.arrow {
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 1.5px;
+    margin: 20px;
+    display: inline-block;
+    top: -89px;
+    left: 171px;
+
+    & div {
+        position: relative;
+        top: 20px;
+        width: 30px;
+        height: 1.5px;
+        background-color: $color-grey-dark;
+        left:0;
+        display: block;
+    
+        &:after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 1.5px;
+            top: -4px;
+            right: 0;
+            background-color: $color-grey-dark;
+            transform: rotate(45deg);
+        }
+    
+        &:before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 1.5px;
+            top: 4px;
+            right: 0;
+            background-color:$color-grey-dark;
+            transform: rotate(-45deg);
+        }
+    }   
+    
+    
+    @media screen and (max-width:$tablet-start){
+        top: -56px;
+        left: 83px;
+    }
+    @media screen and (max-width:$mobile){
+        top: -54px;
+        left: 162px;
+    }
+}

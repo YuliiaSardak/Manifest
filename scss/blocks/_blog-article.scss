@@ -1,0 +1,112 @@
+.blog__article {
+    display: flex;
+    gap: 30px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: left;
+    align-items: center;
+    max-width: 1170px;
+
+
+    @media screen and (max-width:$tablet-start){
+        gap: 20px;
+    }
+
+    @media screen and (max-width:$mobile){
+    flex-direction: column-reverse;
+    }
+
+    &-text {
+        max-width: 450px;
+        margin-top: 85px;
+
+        @media screen and (max-width:$tablet-start){  
+            max-width: 340px;
+            margin-top: 0;
+            max-height: 280px;}
+    }
+
+    &-ptetitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: $color-grey-dark;
+    }
+
+    &-title {
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: $color-black-default;
+        font-family: $primary-title;
+        margin-top: 30px;
+
+        @media screen and (max-width:$tablet-start){  
+            margin-top: 15px;
+        }
+
+        @media screen and (max-width:$mobile){
+            font-size: 22px;
+        }
+    }
+
+    &-data {
+        color: $color-grey-dark;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: $color-grey-dark;
+        margin-top: 15px;
+
+        @media screen and (max-width:$mobile){
+            margin-top: 10px;
+        }
+    }
+    &-description {
+        margin-bottom: 37px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 166%;
+        letter-spacing: 0.03em;
+        color: $color-gray;
+        margin-top: 50px;
+
+        @media screen and (max-width:$tablet-start){
+            margin-top: 40px;
+            max-width: 340px;
+            margin-bottom: 0;
+            margin-top: 20px;
+            }
+            @media screen and (max-width:$mobile){
+                margin-top: 40px;
+            }
+        }
+
+        &-image {
+            background-image: url('../../image/arrow_desktop.jpg');
+            width: 570px;
+            height: 470px;
+            background-repeat: no-repeat;
+        
+            @media screen and (max-width:$tablet-start){
+                background-image: url('../../image/arrow_tablet.jpg');;
+                width: 340px;
+                height: 280px;
+            }
+
+            @media screen and (max-width:$tablet-start){
+                background-image: url('../../image/arrow_mobile.jpg');
+                background-position: center;
+            }
+        }
+}
+
+
+
+
+
+
+

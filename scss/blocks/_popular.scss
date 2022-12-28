@@ -1,0 +1,98 @@
+.popular {
+    margin:auto;
+    margin-top: 86px;
+
+    @media screen and (max-width:$tablet-start){
+        margin-top: 66px;
+    }
+
+    @media screen and (max-width:$mobile){
+        margin-top: 70px;
+    }
+
+
+    &__name {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width:$mobile){
+            display: block;
+        }
+        
+        &-title {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 166%;
+            letter-spacing: 0.1em;
+            color: $color-black-default;
+            font-family: $primary-title;
+        }
+        &-pretitle {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 166%;
+            letter-spacing: 0.1em;
+            color: $color-grey-dark;
+        }
+    }
+     &__blocks {
+        display: flex;
+        gap: 30px;
+        margin-top: 46px;
+
+        @media screen and (max-width:$tablet-start){
+            gap: 20px;
+        }
+        @media screen and (max-width:$mobile){
+            margin-top: 30px;
+            flex-direction: column;
+            gap: 50px;
+        }
+        
+        &-item {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &-data {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 166%;
+            letter-spacing: 0.1em;
+            color: $color-grey-dark;
+        }
+        &-title {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 166%;
+            letter-spacing: 0.1em;
+            color: $color-black-default;
+            font-family: $primary-title;
+
+            @media screen and (max-width:$mobile){
+                font-weight: 600;
+            }
+        }
+        &-pretitle {
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 166%;
+            letter-spacing: 0.05em;
+            color: $color-gray;
+        }
+    }
+}
+.popular__blocks-image {
+    @media screen and (max-width:$tablet-start){
+        max-width: 340px;
+        height: 160px;
+    }
+    @media screen and (max-width:$mobile){
+        max-width: 300px;
+        height: 150px;
+    }
+}
