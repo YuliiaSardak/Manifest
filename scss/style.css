@@ -243,7 +243,7 @@ body {
 }
 
 .banner {
-  background-image: url(../../image/image_mob.jpg);
+  background-image: url(../image/image_mob.jpg);
   height: 500px;
   padding-top: 70px;
   background-repeat: no-repeat;
@@ -254,7 +254,7 @@ body {
   .banner {
     padding-top: 30px;
     min-height: 320px;
-    background-image: url(../../image/image_tablet.jpg);
+    background-image: url(../image/image_tablet.jpg);
     height: 42vw;
   }
 }
@@ -262,7 +262,7 @@ body {
   .banner {
     padding-top: 100px;
     min-height: 600px;
-    background-image: url(../../image/image_desktop.jpg);
+    background-image: url(../image/image_desktop.jpg);
     height: 42vw;
   }
 }
@@ -360,21 +360,21 @@ body {
   }
 }
 .blog__article-image {
-  background-image: url("../../image/arrow_desktop.jpg");
+  background-image: url("../image/arrow_desktop.jpg");
   width: 570px;
   height: 470px;
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 768px) {
   .blog__article-image {
-    background-image: url("../../image/arrow_tablet.jpg");
+    background-image: url("../image/arrow_tablet.jpg");
     width: 340px;
     height: 280px;
   }
 }
 @media screen and (max-width: 768px) {
   .blog__article-image {
-    background-image: url("../../image/arrow_mobile.jpg");
+    background-image: url("../image/arrow_mobile.jpg");
     background-position: center;
   }
 }
@@ -464,15 +464,6 @@ body {
 }
 .footer__block-social-social-item {
   text-decoration: none;
-}
-
-svg:hover > .fill {
-  fill: #565656;
-  stroke: #F4F4F4;
-}
-
-svg:hover > path {
-  fill: #F4F4F4;
 }
 
 .building {

@@ -86,19 +86,19 @@
         }
 
         &-image {
-            background-image: url('../../image/arrow_desktop.jpg');
+            background-image: url('../image/arrow_desktop.jpg');
             width: 570px;
             height: 470px;
             background-repeat: no-repeat;
         
             @media screen and (max-width:$tablet-start){
-                background-image: url('../../image/arrow_tablet.jpg');;
+                background-image: url('../image/arrow_tablet.jpg');;
                 width: 340px;
                 height: 280px;
             }
 
             @media screen and (max-width:$tablet-start){
-                background-image: url('../../image/arrow_mobile.jpg');
+                background-image: url('../image/arrow_mobile.jpg');
                 background-position: center;
             }
         }
